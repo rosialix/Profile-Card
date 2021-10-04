@@ -1,0 +1,149 @@
+/*
+=============== 
+Fonts
+===============
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"); 
+/*
+
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* primary */
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* Neutral */
+  --Dark-gray: hsl(0, 0%, 59%);
+
+  /* Typography */
+  /* --f-kumbh: "Kumbh Sans", sans-serif; */
+  --f-kumbh: "Kumbh Sans";
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--f-kumbh);
+  font-weight: 400;
+  font-size: 14px;
+  background: url(images/bg-pattern-top.svg) top -70vh right 50vw no-repeat,
+    url(./images/bg-pattern-bottom.svg) top 50vh left 55vw no-repeat, center,
+    var(--Dark-cyan);
+  /* background-repeat: no-repeat; */
+  /* color: var(--Very-dark-desaturated-blue); */
+}
+
+main {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  background: url(images/bg-pattern-card.svg) no-repeat white;
+  background-size: contain;
+  width: 400px;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+}
+/*Espacio de identificacion*/
+.foto {
+  width: 60%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.foto_img {
+  width: 55%;
+  height: 45%;
+  border-radius: 100%;
+  border: 5px solid white;
+}
+.foto span,
+h3 {
+  font-weight: lighter;
+  color: var(--Dark-gray);
+  padding: 10px;
+}
+
+/*Datos Estadisticos*/
+.datos {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  border-top: 1px solid hsl(0, 0%, 75%); 
+}
+
+.datos .followers,
+.likes,
+.photos {
+  margin-top: 30px;
+}
+.datos h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.datos p {
+  font-size: 12px;
+  font-weight: lighter;
+  color: var(--Dark-gray);
+  letter-spacing: 2pt;   
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  bottom: 10px; 
+}
+
+@media screen and (max-width:375px){
+    
+  article{
+      width:85%;
+      height: 60%;
+  }
+
+  footer{
+
+    margin-right:auto;
+    margin-left:auto;
+    position: absolute; 
+  }
+
+}
