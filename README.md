@@ -18,8 +18,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![Web version](./images/web.png)
-![Mobile version](./images/mobile.png)
+![Web version](./images/Web.png)
+![Mobile version](./images/Mobile.png)
 
 ### Links
 
