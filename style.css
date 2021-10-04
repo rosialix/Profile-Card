@@ -102,7 +102,7 @@ h3 {
   border-top: 1px solid hsl(0, 0%, 75%); 
 }
 
-
+.datos .followers,
 .likes,
 .photos {
   margin-top: 30px;
@@ -135,7 +135,7 @@ footer {
 @media screen and (max-width:375px){
     
   article{
-      width:85%;
+      width:80%;
       height: 60%;
   }
 
