@@ -80,9 +80,10 @@ article {
 }
 
 .foto_img {
-  width: 55%;
-  height: 45%;
-  border-radius: 100%;
+  width: 65%;
+  height: 50%;
+  background-color: white;
+  border-radius: 50%;
   border: 5px solid white;
 }
 .foto span,
@@ -100,13 +101,10 @@ h3 {
   justify-content: space-evenly;
   text-align: center;
   border-top: 1px solid hsl(0, 0%, 75%); 
+  padding: 20px;
 }
 
-.datos .followers,
-.likes,
-.photos {
-  margin-top: 30px;
-}
+
 .datos h3 {
   font-size: 25px;
   font-weight: bold;
